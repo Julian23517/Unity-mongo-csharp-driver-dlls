@@ -43,6 +43,7 @@ public class Model_User {
 # Get All Models from Collection
 Replace Model_User with your Model Class that represents a document in the Collection   
 Replace userCollection with the referenced collection
+You Could replace "true" with a condition that matches the specific documents you want to get.
 ```script
  List<Model_User> userModelList = userCollection.Find(user => true).ToList();
 ```
