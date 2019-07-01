@@ -19,9 +19,9 @@ db = client.GetDatabase(DATABASE_NAME);
 ```script
 ```
 # Reference Collection:
-Replace Model_User with your Model Class
-Replace collectionName with the name of the collection you want to reference
-make sure that the Model Class has public getter on all Properties and a public ObjectId _id with public getter and setter
+Replace Model_User with your Model Class  
+Replace collectionName with the name of the collection you want to reference  
+make sure that the Model Class has public getter on all Properties and a public ObjectId _id with public getter and setter  
 ```script
  private readonly IMongoCollection<Model_User> userCollection = db.GetCollection<Model_User>("collectionName");
 ```
