@@ -7,7 +7,7 @@ Then you can access your Database like this (replace username, password, DATABAS
 ```script
 using MongoDB.Driver;
 
-private const string MONGO_URI = "mongodb://username:password@127.0.0.1:27017";
+private const string MONGO_URI = "mongodb+srv://username:password@127.0.0.1:27017?retryWrites=true&w=majority";
 private const string DATABASE_NAME = "testDatabase";
 private MongoClient client;
 private IMongoDatabase db;
